@@ -1,0 +1,378 @@
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основные стили для body и html */
+html, body {
+    height: 100%; /* Задаем 100% высоту */
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем отступы */
+    display: flex; /* Используем flexbox */
+    flex-direction: column; /* Вертикальное направление */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Шапка */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* Секция "О нас" */
+#about {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f8f8f8;
+}
+
+#about h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#about p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Секция с услугами */
+#services {
+    padding: 40px 0;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.service-item {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+}
+
+.service-item h3 {
+    font-size: 24px;
+    color: #333;
+}
+
+.service-item p {
+    color: #666;
+}
+
+/* Секция с мастерами */
+/* Секция с мастерами */
+.masters-list {
+    padding: 20px 0;
+}
+
+.master-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Отступ между карточками */
+}
+
+.master-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px; /* Увеличено значение отступа */
+    text-align: center;
+    width: 250px; /* Увеличена ширина карточки */
+    height: 350px; /* Увеличена высота карточки */
+    transition: transform 0.3s;
+}
+
+.master-card img {
+    width: 100%; /* Ширина изображения */
+    border-radius: 8px;
+    margin-bottom: 15px; /* Отступ между изображением и текстом */
+}
+
+.master-card h3 {
+    font-size: 20px; /* Увеличен размер шрифта заголовка */
+    color: #333;
+    margin: 10px 0;
+}
+
+.master-card p {
+    color: #777;
+    margin: 5px 0;
+    font-size: 16px; /* Увеличен размер шрифта для описания */
+}
+
+.master-card .price {
+    font-weight: bold;
+    color: #000;
+    font-size: 18px; /* Увеличен размер шрифта для цены */
+}
+
+.master-card:hover {
+    transform: scale(1.05); /* Увеличение карточки при наведении */
+}
+
+
+/* Секция записи */
+.booking-section {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto; /* Центрирование */
+    width: 80%; /* Ширина формы записи */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+select, 
+input[type="date"],
+input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+select:focus,
+input[type="date"]:focus,
+input[type="time"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+input[readonly] {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    width: 100%; /* Полная ширина кнопки */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Футер */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    margin-top: auto; /* Сдвигает футер вниз */
+}
+
+/* Убедитесь, что контейнер занимает всё доступное пространство */
+.container {
+    flex: 1; /* Заставляет контейнер занимать всё доступное пространство */
+}
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основные стили для body и html */
+html, body {
+    height: 100%; /* Задаем 100% высоту */
+    margin: 0; /* Убираем отступы */
+    padding: 0; /* Убираем отступы */
+    display: flex; /* Используем flexbox */
+    flex-direction: column; /* Вертикальное направление */
+}
+
+/* Основной стиль для body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Шапка */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header-container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+/* Секции */
+section {
+    padding: 40px 20px; /* Отступы для секций */
+    margin: 20px auto; /* Центрирование и отступы между секциями */
+    background-color: #fff; /* Фоновый цвет */
+    border-radius: 8px; /* Скругление углов */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Тень */
+    width: 80%; /* Ширина секции */
+}
+
+/* Заголовки секций */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Услуги */
+.service-item {
+    margin-bottom: 20px; /* Отступ между услугами */
+}
+
+/* Отзывы */
+.review {
+    margin-bottom: 15px; /* Отступ между отзывами */
+}
+
+/* Футер */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    margin-top: auto; /* Сдвигает футер вниз */
+}
+
+/* Убедитесь, что контейнер занимает всё доступное пространство */
+.container {
+    flex: 1; /* Заставляет контейнер занимать всё доступное пространство */
+}
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.carousel-inner {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+}
+
+.carousel-item {
+    display: none;
+    font-size: 18px;
+    padding: 0 20px;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+/* Стиль для кнопок управления */
+.carousel-control {
+    font-size: 24px;
+    color: #333;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0 10px;
+    user-select: none;
+    transition: color 0.3s;
+}
+
+.carousel-control:hover {
+    color: #007BFF;
+}
